@@ -108,6 +108,8 @@ func main() {
 	prometheus.MustRegister(powerMeterPowerFactor)
 	prometheus.MustRegister(powerMeterActiveEnergy)
 
+	log.Printf("Serving Server at %s:%d", *listenHost, *listenPort)
+
 	http.Handle("/metrics", promhttp.Handler())
 	http.ListenAndServe((*listenHost)+":"+strconv.Itoa(*listenPort), nil)
 
