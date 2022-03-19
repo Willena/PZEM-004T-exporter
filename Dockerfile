@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM golang
 WORKDIR /pzem-exporter
 COPY . .
 RUN go build -o PZEM_exporter .
