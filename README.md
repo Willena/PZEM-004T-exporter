@@ -1,3 +1,6 @@
+
+[![dockerhub](https://img.shields.io/docker/v/gillena/pzem-exporter?color=blue&label=Docker%20Hub)](https://hub.docker.com/r/gillena/pzem-exporter)
+
 # PZEM-004T-exporter
 
 A prometheus exporter for PZEM-004T power meter written in Golang
