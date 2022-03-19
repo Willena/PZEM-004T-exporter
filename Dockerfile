@@ -1,4 +1,5 @@
-FROM golang
+FROM golang:alpine
+RUN apk add git
 WORKDIR /pzem-exporter
 COPY . .
 RUN go build -o PZEM_exporter .
